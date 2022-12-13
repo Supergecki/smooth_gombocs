@@ -74,10 +74,10 @@ def analyze_gradientfield(gradientfield): # Analyzes a given gradientfield, find
             else: # No local extremum found at this point. Looking for the biggest gradient in a direction to draw an arrow towards.
                 biggest_gradient = max(-gradientfield[m][n][0], -gradientfield[m][n][1], gradientfield[m][n][2], gradientfield[m][n][3])
                 direction_number = (-gradientfield[m][n][0], -gradientfield[m][n][1], gradientfield[m][n][2], gradientfield[m][n][3]).index(biggest_gradient)
-                if direction_number == 0: analyzed_gradientfield[m][n] = "^"
-                elif direction_number == 1: analyzed_gradientfield[m][n] = "<"
-                elif direction_number == 2: analyzed_gradientfield[m][n] = "v"
-                elif direction_number == 3: analyzed_gradientfield[m][n] = ">"                
+                if direction_number == 0: analyzed_gradientfield[m][n] = "v"
+                elif direction_number == 1: analyzed_gradientfield[m][n] = ">"
+                elif direction_number == 2: analyzed_gradientfield[m][n] = "^"
+                elif direction_number == 3: analyzed_gradientfield[m][n] = "<"                
     return analyzed_gradientfield
 
 heightfield1 = load_heightfield(FILENAME)   
