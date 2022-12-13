@@ -4,8 +4,8 @@ from matrix import Matrix
 from math import pi, sin, cos, tan, exp
 
 RAD = 180           # Represents a half angle, corresponding to pi in radiant.
-PARAM_C = 1/2       # smaller values create bigger deviation of base_f from the identity function
-PARAM_D = 1/2       # deviation from the sphere
+PARAM_C = float(input("Geben Sie den Parameter c ein: "))       # smaller values create bigger deviation of base_f from the identity function
+PARAM_D = float(input("Geben Sie den Parameter d ein: "))       # deviation from the sphere
 ANGLE_ACCURACY = 72 # The higher the angle accuracy, the more values are calculated. It is the number of phi respectively theta values.
 VALUE_ACCURACY = 3  # Accuracy of the values in number of decimals after the decimal point.
 
